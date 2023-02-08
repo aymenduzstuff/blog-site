@@ -19,3 +19,9 @@ body{
     font-size: 2rem;
     color : cyan ;
 }
+
+.post {
+    width: 80%;
+    height : 50px ;
+    overflow: hidden ;
+}
