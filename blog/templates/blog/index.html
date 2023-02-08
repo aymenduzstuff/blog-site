@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'blog/index.css' %}">
+{% endblock css %}
+
+
+{% block title %}
+socially anxious slug
+{% endblock title %}
+{% block content %}
+    
+
+    <section id="welcome">
+        <header>
+            <img src="{% static 'blog/images/me.jpeg' %}" alt=" an image of me"/>
+            <h2>aymen's blog</h2>
+        </header>
+        <p>hello i'm aymen and i'm trying ot make it in life</p>
+    </section>
+
+    <section id="latest-post">
+        <h2>latest posts :</h2>
+        <ul>
+            {% include "blog/includes/post.html" %}
+        </ul>
+    </section>
+    <section id="about">
+        <h2>whoo am i </h2>
+        <p>i do tyr to help people with social anxiety reduce their anxiety to where it's not so crippling</p>
+    </section>
+    
+            
+{% endblock content %}
