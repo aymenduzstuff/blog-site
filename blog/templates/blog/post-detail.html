@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+the post title 
+{% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'blog/post-detail.css' %}">
+
+{% endblock css %}
+
+{% block content %}
+<section id="summary" >
+    <h2>post title</h2>
+    <article>
+        <img src="{% static 'blog/images/cat.jpeg' %}" alt="a picture of me in the alternate uiverse">
+        <address>by aymen </address>
+        <div>last updated on <time>july 10th</time></div>
+    </article>
+</section>
+<main>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima illum officiis labore cupiditate voluptate? Quam, cupiditate iure? Et, quas dicta vero tempora maxime porro eligendi nostrum facere, totam pariatur officiis!
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima illum officiis labore cupiditate voluptate? Quam, cupiditate iure? Et, quas dicta vero tempora maxime porro eligendi nostrum facere, totam pariatur officiis!
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima illum officiis labore cupiditate voluptate? Quam, cupiditate iure? Et, quas dicta vero tempora maxime porro eligendi nostrum facere, totam pariatur officiis!
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima illum officiis labore cupiditate voluptate? Quam, cupiditate iure? Et, quas dicta vero tempora maxime porro eligendi nostrum facere, totam pariatur officiis!
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima illum officiis labore cupiditate voluptate? Quam, cupiditate iure? Et, quas dicta vero tempora maxime porro eligendi nostrum facere, totam pariatur officiis!
+    </p>
+    
+</main>
+{% endblock content %}
+

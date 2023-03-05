@@ -7,5 +7,5 @@ def home(request):
 def posts(request):
     return render(request , "blog/posts.html")
 
-def post():
-    pass
+def post(request , slug):
+    return render(request , "blog/post-detail.html")
